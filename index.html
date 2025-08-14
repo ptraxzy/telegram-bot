@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultra Store Hosting</title>
+  <meta name="description" content="Ultra Store Hosting - Layanan hosting berkualitas, harga terjangkau, support 24/7.">
+  <meta property="og:title" content="Ultra Store Hosting">
+  <meta property="og:description" content="Layanan hosting berkualitas, harga terjangkau, support 24/7.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="Ultra Store Hosting" style="height:36px" />
+      </a>
+      <nav>
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#produk" class="nav-link">Produk</a>
+        <a href="#testimoni" class="nav-link">Testimoni</a>
+        <a href="#pembayaran" class="nav-link">Metode Pembayaran</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="beranda" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1>Hosting Cepat & Handal untuk Bisnis Anda</h1>
+          <p>Ultra Store Hosting menyediakan layanan hosting berkualitas dengan harga terjangkau. Jaminan uptime tinggi dan support 24/7.</p>
+          <a href="#kontak" class="btn primary">Pesan Sekarang</a>
+        </div>
+      </div>
+      <div class="wave" aria-hidden="true"></div>
+    </section>
+
+    <!-- Produk, Testimoni, dll (pakai template sebelumnya) -->
+
+    <section id="testimoni-lain" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Lebih Banyak Testimoni</h2>
+        <p class="section-subtitle">Beberapa review tambahan dari pelanggan setia kami</p>
+        <div class="testimonial reveal">
+          <div class="avatar">A</div>
+          <blockquote>"Layanan cepat, harga sangat bersaing. Website saya langsung online tanpa masalah."</blockquote>
+          <div class="name">Andi P.</div>
+        </div>
+        <div class="testimonial reveal" style="--delay:.1s">
+          <div class="avatar">M</div>
+          <blockquote>"Sangat puas dengan supportnya. Dibimbing step-by-step."</blockquote>
+          <div class="name">Maya L.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontak" class="section alt">
+      <div class="container contact">
+        <h2 class="section-title">Kontak Kami</h2>
+        <form action="https://formspree.io/f/mnqepjvj" method="POST" class="contact-form reveal">
+          <input type="text" name="nama" placeholder="Nama Anda" required>
+          <input type="email" name="email" placeholder="Email Anda" required>
+          <textarea name="pesan" placeholder="Pesan Anda" required></textarea>
+          <button type="submit" class="btn primary">Kirim</button>
+        </form>
+        <p class="section-subtitle">Atau hubungi langsung via WhatsApp: <a href="https://wa.me/6285191689131" target="_blank">0851-9168-9131</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="about">
+        <h4>Tentang Kami</h4>
+        <p>Ultra Store Hosting menyediakan layanan hosting, domain, dan server dengan harga terbaik.</p>
+      </div>
+      <div class="copyright">
+        © <span id="year"></span> Ultra Store Hosting. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
