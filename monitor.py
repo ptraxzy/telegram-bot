@@ -6,7 +6,7 @@ import pandas as pd
 from io import BytesIO
 from threading import Thread
 
-TOKEN = "8267618827:AAGYZtuOVCW5xQRAubahLRICkrFISwCzubE"
+TOKEN = "MASUKKAN_TOKEN_BPT_ANDA"
 bot = telebot.TeleBot(TOKEN)
 
 # Data history buat grafik
