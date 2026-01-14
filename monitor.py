@@ -6,7 +6,7 @@ import pandas as pd
 from io import BytesIO
 from threading import Thread
 
-TOKEN = "MASUKKAN_TOKEN_BPT_ANDA"
+TOKEN = "MASUKKAN_TOKEN_BOT_ANDA"
 bot = telebot.TeleBot(TOKEN)
 
 # Data history buat grafik
@@ -56,7 +56,7 @@ def auto_monitor(chat_id):
                            f"💰 Price: `Rp {price_idr:,.0f}`\n"
                            f"📊 Status: {status}\n"
                            f"🕒 Change 24h: `{change:.2f}%`\n\n"
-                           f"Gue kirim grafiknya nih, pantau terus, b@jingan!")
+                           f"Gue kirim grafiknya nih, pantau terus, ya!")
                 
                 bot.send_photo(chat_id, chart, caption=caption, parse_mode='Markdown')
                 last_price = price_idr
@@ -72,5 +72,6 @@ def start_monitor(message):
     bot.send_message(message.chat.id, "🚀 **Auto-Monitor Dinyalakan!** Siapkan mental lu liat harganya!")
     Thread(target=auto_monitor, args=(message.chat.id,)).start()
 
-print("BLACK DRAGON V11 CHART ENGINE RUNNING... 🚀🔥")
+print("Bot berjalan")
 bot.infinity_polling()
+
